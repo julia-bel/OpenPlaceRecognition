@@ -14,7 +14,7 @@ gpu_id: 0
 image_dir: null
 page_num: 0
 det_algorithm: "DB"
-det_model_dir: null
+det_model_dir: "./../../weights/paddleocr/infer/det_db_inference_v2/"
 det_limit_side_len: 960.0
 det_limit_type: "max"
 det_box_type: "quad"
@@ -49,13 +49,13 @@ beta: 1.0
 fourier_degree: 5
 
 # text_recognizer:
-rec_algorithm: "SVTR_LCNet"
-rec_model_dir: null
+rec_algorithm: "STARNet"
+rec_model_dir: "./../../weights/paddleocr/infer/infer_mv3_v2/"
 rec_image_inverse: true
 rec_image_shape: "3, 48, 320"
 rec_batch_num: 6
 max_text_length: 25
-rec_char_dict_path: "./../../weights/paddleocr/ru_dict.txt"
+rec_char_dict_path: "./../../weights/paddleocr/ru_dict_2.txt"
 use_space_char: true
 vis_font_path: "./doc/fonts/simfang.ttf"
 drop_score: 0.5
